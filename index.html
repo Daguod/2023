@@ -20,7 +20,7 @@
             font-family: "楷体";
         }
     </style>
-    <title>2023新年年快乐</title>
+    <title>2023生活愉快</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -78,7 +78,7 @@
         <div class="stage-container remove">
             <div class="page_two hide">
                 <div id="text" style="display:none;">
-                    <p>💥请各位看烟花💥<br/><span id="text1"></span><br/><br/>彩蛋:点击屏幕任意地方即可放烟花.<br></p>
+                    <p>💥请各位看烟花啦💥<br/><span id="text1"></span><br/><br/>彩蛋:点击屏幕任意地方即可放烟花.<br></p>
                 </div>
                 <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
             </div>
@@ -210,7 +210,7 @@
             var years = days * 365
             var today = new Date()
             var todayYear = today.getFullYear()
-            var newYear = todayYear + 1
+            var newYear = todayYear
             var lastYear = todayYear - 1
             var todayMonth = today.getMonth() + 1
             var todayDate = today.getDate()
@@ -233,12 +233,12 @@
             var diff2Minutes = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours) / minutes)
             var diff2Seconds = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours - diff2Minutes *
                 minutes) / seconds)
-            if (todayMonth == 1) { 
-                if (todayDate == 1) {
+            // if (todayMonth == 1) { 
+                // if (todayDate == 1) {
                      document.getElementById("text1").innerHTML ="💥现在是"+todayYear+"年"+todayMonth+"月"+todayDate+"日💥<br/>💥祝各位新年心想事成,新年快乐!💥" 
-                    } 
-                }
-            else { document.getElementById("text1").innerHTML = "提前祝你" + newYear + "新年快乐" }
+                    // } 
+                // }
+            // else { document.getElementById("text1").innerHTML = "💥祝你" + newYear + "新年快乐💥" }
             // document.getElementById("time").innerHTML = diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒" + newYear+'年'
         }
         time()
